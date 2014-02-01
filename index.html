@@ -27,37 +27,145 @@
 
       </header>
       <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h1>
+<a name="central-virginia-scala-scholars" class="anchor" href="#central-virginia-scala-scholars"><span class="octicon octicon-link"></span></a>Central Virginia Scala Scholars</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>This site is a work in progress. Fragments below are from the first meeting notes.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<h2>
+<a name="discussion" class="anchor" href="#discussion"><span class="octicon octicon-link"></span></a>Discussion</h2>
+
+<ul>
+<li>
+<p>Documentation</p>
+
+<ul>
+<li>
+<a href="http://www.scala-lang.org/api/current/">Scaladocs</a> ~ only for reference; don't exepect Java or .NET comprehensiveness.</li>
+<li>
+<a href="http://docs.scala-lang.org/tutorials/">Official Tutorial</a> ~ mixed quality, but mostly good</li>
+<li><a href="http://twitter.github.io/scala_school/">Twitter's Scala School</a></li>
+<li><a href="http://ktoso.github.io/scala-types-of-types/">http://ktoso.github.io/scala-types-of-types/</a></li>
+<li><a href="http://blog.tmorris.net/posts/scalaoption-cheat-sheet/">Option Cheat Cheet</a></li>
+<li><a href="http://javarevisited.blogspot.sg/2014/01/top-5-free-books-to-learn-scala-programming-PDF.html">Top 5 Free Books to Learn Scala Programming</a></li>
+<li>
+</ul>
+</li>
+<li>
+<p>News {Feeds,Aggregators,Sources}</p>
+
+<ul>
+<li><a href="https://plus.google.com/u/1/communities/100488232353575866687">Scala Google+ Community</a></li>
+<li><a href="https://hn.algolia.com/?q=scala#!/story/sort_by_date/0/scala">Scala in Hacker News</a></li>
+<li><a href="https://flipboard.com/section/scala-%26-fp-in-the-enterprise-bN3uU4">Flipboard: Scala &amp; FP in the Enterprise</a></li>
+<li>
+</ul>
+</li>
+<li>
+<p>Compelling features</p>
+
+<ul>
+<li>Case classes</li>
+<li>Pattern matching</li>
+<li>Functional collections</li>
+<li>For comprehensions</li>
+<li>Options</li>
+<li>Traits</li>
+</ul>
+</li>
+<li>
+<p>Simple Scala Build Tool</p>
+
+<ul>
+<li>Love or Hate?</li>
+<li>
+<code>.sbt</code> vs. <code>.scala</code> build definitions</li>
+</ul>
+</li>
+</ul><h3>
+<a name="basic-sbt-build-definition" class="anchor" href="#basic-sbt-build-definition"><span class="octicon octicon-link"></span></a>Basic SBT Build Definition</h3>
+
+<p>Basic <code>build.sbt</code> file</p>
+
+<div class="highlight highlight-scala"><pre><span class="n">name</span> <span class="o">:=</span> <span class="s">"hello"</span>
+
+<span class="n">version</span> <span class="o">:=</span> <span class="s">"1.0"</span>
+
+<span class="n">scalaVersion</span> <span class="o">:=</span> <span class="s">"2.10.2"</span>
+</pre></div>
+
+<p>Assumes your project structure is:</p>
+
+<pre><code>hello/                  # your project's base directory
+
+    Hello.scala         # a source file in your project (could be in
+                        #   src/main/scala too)
+
+    build.sbt           # build.sbt is part of the source code for the
+                        #   build definition project inside project/
+
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="frameworks" class="anchor" href="#frameworks"><span class="octicon octicon-link"></span></a>Frameworks</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<ul>
+<li>Sinatra: <a href="http://www.scalatra.org">http://www.scalatra.org</a>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<ul>
+<li>See Finatra</li>
+</ul>
+</li>
+<li>Scalate: <a href="http://scalate.fusesource.org">http://scalate.fusesource.org</a>
+</li>
+<li>Lift: <a href="http://demo.liftweb.net">http://demo.liftweb.net</a> (dying out?)</li>
+<li>Play 2: <a href="http://www.playframework.com">http://www.playframework.com</a>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<ul>
+<li>Built on Akka... very positive</li>
+<li>Runs well on Amazon micro instances</li>
+</ul>
+</li>
+<li>
+<a href="http://www.thoughtworks.com/radar/#/languages-and-frameworks">ThoughtWorks Technology Radar</a> on <a href="http://www.thoughtworks.com/radar/#/languages-and-frameworks/669">Play 2</a>
+</li>
+<li><a href="http://jonasboner.com/2008/10/06/real-world-scala-dependency-injection-di/">Real World Scala Dependency Injection</a></li>
+</ul><h2>
+<a name="goal-of-group" class="anchor" href="#goal-of-group"><span class="octicon octicon-link"></span></a>Goal of Group</h2>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<ul>
+<li>Help people find answers to their Scala problems</li>
+<li>Communications options:
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<ul>
+<li>Gist?</li>
+<li>G+?</li>
+<li>IRC? -&gt; with history</li>
+<li>Just email?</li>
+<li>Email + IRC</li>
+</ul>
+</li>
+</ul><h2>
+<a name="presentation-ideas" class="anchor" href="#presentation-ideas"><span class="octicon octicon-link"></span></a>Presentation Ideas</h2>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<ul>
+<li>Implicit Party/Parlor Tricks</li>
+<li>Flash Talks</li>
+<li>Bringing new Developers to Scala</li>
+<li>Implicits</li>
+<li>Algebraic Types</li>
+<li>Coding Challenge</li>
+<li>Getting Started Guide</li>
+<li>Positive Examples</li>
+<li>Lessons Learned</li>
+<li>Spark and Scalding </li>
+<li>Akka</li>
+<li>GraphX</li>
+<li>How OO + Functional wins</li>
+<li>Favorite libraries</li>
+<li>SummingBird: <a href="https://github.com/twitter/summingbird">https://github.com/twitter/summingbird</a>
+</li>
+</ul>
       </section>
       <footer>
         <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
